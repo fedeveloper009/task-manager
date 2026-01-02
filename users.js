@@ -9,6 +9,6 @@ export const allowedUsers = [
   },
   {
     email: "evertonbelo01@gmail.com",
-    senha: "123456"
+    senha: "123456",
   },
 ];
