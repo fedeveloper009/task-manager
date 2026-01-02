@@ -7,4 +7,8 @@ export const allowedUsers = [
     email: "2dbr009@gmail.com",
     senha: "Teste1234@",
   },
+  {
+    email: "evertonbelo01@gmail.com",
+    senha: "123456",
+  },
 ];
