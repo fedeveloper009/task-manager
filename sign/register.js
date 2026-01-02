@@ -1,4 +1,13 @@
-import { allowedUsers } from "../users.js";
+let allowedUsers = JSON.parse(localStorage.getItem("allowedUsers")) || [
+  {
+    email: "fedeveloper009@gmail.com",
+    senha: "Rimurutempest009@",
+  },
+  {
+    email: "2dbr009@gmail.com",
+    senha: "Teste1234@",
+  },
+];
 
 function registrarUsuario() {
   var email = document.getElementById("email").value;
@@ -19,6 +28,7 @@ function registrarUsuario() {
 
   // Add new user
   allowedUsers.push({ email, senha });
+  localStorage.setItem("allowedUsers", JSON.stringify(allowedUsers));
   alert("Usuário registrado com sucesso!");
 
   // Redirect to login page
